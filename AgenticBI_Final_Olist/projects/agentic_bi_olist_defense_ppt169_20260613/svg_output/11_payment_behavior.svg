@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F7F9FB"/>
+  <g id="header">
+    <text x="50" y="58" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" font-weight="bold" fill="#17324D">支付热力图揭示信用卡和分期是核心支付行为</text>
+    <rect x="50" y="82" width="1180" height="42" rx="8" fill="#2F80ED" fill-opacity="0.10"/>
+    <text x="70" y="109" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#17324D">核心结论：支付偏好不仅是统计结果，也能转化为分期营销建议</text>
+  </g>
+  <g id="payment-image">
+    <rect x="60" y="150" width="680" height="500" rx="12" fill="#FFFFFF" stroke="#D6E0EA"/>
+    <image href="../images/heatmap_payment_installments.png" x="90" y="178" width="620" height="443" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+  <g id="insights">
+    <rect x="790" y="150" width="420" height="500" rx="14" fill="#FFFFFF" stroke="#D6E0EA"/>
+    <text x="824" y="206" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold" fill="#17324D">业务解读</text>
+    <g id="insight-1">
+      <rect x="824" y="242" width="330" height="72" rx="10" fill="#17324D"/>
+      <text x="850" y="272" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">信用卡是主流入口</text>
+      <text x="850" y="298" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" fill="#D6E0EA">支付体验优化优先围绕 credit card</text>
+    </g>
+    <g id="insight-2">
+      <rect x="824" y="342" width="330" height="72" rx="10" fill="#2F80ED" fill-opacity="0.12" stroke="#D6E0EA"/>
+      <text x="850" y="372" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#2F80ED">分期是高客单价杠杆</text>
+      <text x="850" y="398" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" fill="#52677A">3 期 / 6 期免息可刺激转化</text>
+    </g>
+    <g id="insight-3">
+      <rect x="824" y="442" width="330" height="72" rx="10" fill="#F2994A" fill-opacity="0.14" stroke="#D6E0EA"/>
+      <text x="850" y="472" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#F2994A">Boleto 仍需保留</text>
+      <text x="850" y="498" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" fill="#52677A">符合巴西线下付款习惯</text>
+    </g>
+    <text x="824" y="564" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#1F2937">答辩时从 payment type × installments 矩阵出发，</text>
+    <text x="824" y="592" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#1F2937">解释支付偏好如何转成分期营销动作。</text>
+  </g>
+  <g id="footer">
+    <text x="50" y="684" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">Source: data/artifacts/demo/heatmap_payment_installments.png, docs/05_results.md</text>
+    <text x="1230" y="684" text-anchor="end" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">11 / 18</text>
+  </g>
+</svg>

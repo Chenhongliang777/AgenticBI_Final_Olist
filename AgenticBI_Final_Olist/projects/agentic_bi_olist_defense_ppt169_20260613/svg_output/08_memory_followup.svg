@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F7F9FB"/>
+  <g id="header">
+    <text x="50" y="58" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" font-weight="bold" fill="#17324D">MemorySaver 与显式历史让追问不丢上下文</text>
+    <rect x="50" y="82" width="1180" height="42" rx="8" fill="#00A6A6" fill-opacity="0.10"/>
+    <text x="70" y="109" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#17324D">核心结论：“那准时率呢？”会被改写为带上轮问题的完整分析任务</text>
+  </g>
+  <g id="chat-example">
+    <rect x="72" y="154" width="540" height="448" rx="16" fill="#FFFFFF" stroke="#D6E0EA"/>
+    <text x="104" y="202" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold" fill="#17324D">多轮追问示例</text>
+    <g id="chat-1">
+      <rect x="104" y="232" width="390" height="60" rx="14" fill="#2F80ED" fill-opacity="0.12"/>
+      <text x="126" y="258" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#2F80ED">User</text>
+      <text x="126" y="280" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#1F2937">2017 年哪个州销售额最高？</text>
+    </g>
+    <g id="chat-2">
+      <rect x="158" y="318" width="390" height="70" rx="14" fill="#F7F9FB" stroke="#D6E0EA"/>
+      <text x="180" y="344" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#17324D">Assistant</text>
+      <text x="180" y="368" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#1F2937">命中 mv_state_sales，SP 州排名第一。</text>
+    </g>
+    <g id="chat-3">
+      <rect x="104" y="414" width="390" height="60" rx="14" fill="#2F80ED" fill-opacity="0.12"/>
+      <text x="126" y="440" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#2F80ED">User</text>
+      <text x="126" y="462" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#1F2937">那准时率呢？</text>
+    </g>
+    <g id="chat-4">
+      <rect x="158" y="500" width="390" height="70" rx="14" fill="#F7F9FB" stroke="#D6E0EA"/>
+      <text x="180" y="526" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#17324D">System rewrite</text>
+      <text x="180" y="550" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" fill="#1F2937">2017 年哪个州销售额最高？追问：那准时率呢？</text>
+    </g>
+  </g>
+  <g id="mechanism">
+    <rect x="660" y="154" width="550" height="448" rx="16" fill="#FFFFFF" stroke="#D6E0EA"/>
+    <text x="692" y="202" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold" fill="#17324D">两层上下文机制</text>
+    <g id="state-1">
+      <rect x="692" y="236" width="462" height="92" rx="12" fill="#17324D"/>
+      <text x="720" y="270" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">LangGraph MemorySaver</text>
+      <text x="720" y="300" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#D6E0EA">同一 thread_id 下保存图状态快照</text>
+    </g>
+    <g id="state-2">
+      <rect x="692" y="356" width="462" height="92" rx="12" fill="#2F80ED" fill-opacity="0.12" stroke="#D6E0EA"/>
+      <text x="720" y="390" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#2F80ED">conversation_history</text>
+      <text x="720" y="420" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">前端显式传入历史问答，供 Coordinator 和 SQL Agent 使用</text>
+    </g>
+    <g id="state-3">
+      <rect x="692" y="476" width="462" height="92" rx="12" fill="#00A6A6" fill-opacity="0.12" stroke="#D6E0EA"/>
+      <text x="720" y="510" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#00A6A6">context_rewrite</text>
+      <text x="720" y="540" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">把短追问补全为独立业务问题，降低上下文丢失风险</text>
+    </g>
+  </g>
+  <g id="footer">
+    <text x="50" y="684" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">Source: agents/state.py, dashboard/app.py, docs/b9_test_record.md</text>
+    <text x="1230" y="684" text-anchor="end" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">08 / 18</text>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F7F9FB"/>
+  <g id="top-band">
+    <rect x="0" y="0" width="1280" height="210" fill="#17324D"/>
+    <text x="70" y="94" font-family="Microsoft YaHei, Arial, sans-serif" font-size="42" font-weight="bold" fill="#FFFFFF">结论：Agentic BI 让 Olist 数据从“可查”走向“可行动”</text>
+    <text x="72" y="140" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" fill="#D6E0EA">自然语言入口、预聚合视图、多 Agent 协作和可视化交付构成完整课程项目闭环</text>
+  </g>
+  <g id="value-cards">
+    <rect x="70" y="262" width="322" height="142" rx="14" fill="#FFFFFF" stroke="#D6E0EA"/>
+    <circle cx="112" cy="312" r="19" fill="#2F80ED" fill-opacity="0.14"/>
+    <path d="M102 312 H122 M112 302 V322" stroke="#2F80ED" stroke-width="2.4" stroke-linecap="round"/>
+    <text x="148" y="310" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#17324D">面向业务</text>
+    <text x="100" y="354" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#52677A">销售、配送、支付、评分问题</text>
+    <text x="100" y="382" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#52677A">可以被自然语言直接触达</text>
+    <rect x="70" y="438" width="322" height="142" rx="14" fill="#FFFFFF" stroke="#D6E0EA"/>
+    <circle cx="112" cy="488" r="19" fill="#00A6A6" fill-opacity="0.14"/>
+    <path d="M102 495 L112 481 L122 495" fill="none" stroke="#00A6A6" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="148" y="486" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#17324D">面向工程</text>
+    <text x="100" y="530" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#52677A">状态编排、视图刷新、图表导出</text>
+    <text x="100" y="558" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#52677A">保证演示和复现实验一致</text>
+  </g>
+  <g id="submission">
+    <rect x="468" y="262" width="742" height="318" rx="16" fill="#FFFFFF" stroke="#D6E0EA"/>
+    <text x="508" y="314" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="bold" fill="#17324D">成员 D 交付清单</text>
+    <g id="checks">
+      <circle cx="528" cy="370" r="12" fill="#2E7D32"/>
+      <path d="M521 370 L526 375 L535 364" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="556" y="376" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" fill="#1F2937">项目总结报告：Markdown、PDF、DOCX</text>
+      <circle cx="528" cy="420" r="12" fill="#2E7D32"/>
+      <path d="M521 420 L526 425 L535 414" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="556" y="426" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" fill="#1F2937">答辩 PPT、答辩讲稿、演示排练记录</text>
+      <circle cx="528" cy="470" r="12" fill="#2E7D32"/>
+      <path d="M521 470 L526 475 L535 464" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="556" y="476" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" fill="#1F2937">README 更新、架构图、提交清单</text>
+      <circle cx="528" cy="520" r="12" fill="#2E7D32"/>
+      <path d="M521 520 L526 525 L535 514" fill="none" stroke="#FFFFFF" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/>
+      <text x="556" y="526" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" fill="#1F2937">演示素材和性能对比图已归档</text>
+    </g>
+  </g>
+  <g id="thanks">
+    <text x="640" y="652" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="26" font-weight="bold" fill="#17324D">谢谢老师和同学们，欢迎提问</text>
+    <text x="1230" y="684" text-anchor="end" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">18 / 18</text>
+  </g>
+</svg>

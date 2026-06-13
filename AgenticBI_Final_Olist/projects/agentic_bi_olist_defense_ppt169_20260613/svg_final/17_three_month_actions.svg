@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F7F9FB" />
+  <g id="header">
+    <text x="50" y="58" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" font-weight="bold" fill="#17324D">后续三个月：从课程原型走向可持续 BI 助手</text>
+    <path fill="#00A6A6" fill-opacity="0.10" d="M58,82 H1222 A8,8 0 0 1 1230,90 V116 A8,8 0 0 1 1222,124 H58 A8,8 0 0 1 50,116 V90 A8,8 0 0 1 58,82 Z" />
+    <text x="70" y="109" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#17324D">核心结论：下一步重点不是堆功能，而是提升数据新鲜度、智能稳健性和业务闭环能力</text>
+  </g>
+  <g id="timeline">
+    <line x1="160" y1="342" x2="1120" y2="342" stroke="#D6E0EA" stroke-width="4" stroke-linecap="round" />
+    <circle cx="236" cy="342" r="24" fill="#2F80ED" />
+    <circle cx="640" cy="342" r="24" fill="#00A6A6" />
+    <circle cx="1044" cy="342" r="24" fill="#F2994A" />
+    <text x="236" y="350" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">1</text>
+    <text x="640" y="350" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">2</text>
+    <text x="1044" y="350" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">3</text>
+  </g>
+  <g id="month-1">
+    <path fill="#FFFFFF" stroke="#D6E0EA" d="M84,172 H388 A14,14 0 0 1 402,186 V292 A14,14 0 0 1 388,306 H84 A14,14 0 0 1 70,292 V186 A14,14 0 0 1 84,172 Z" />
+    <text x="100" y="214" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold" fill="#2F80ED">第 1 月：数据层</text>
+    <text x="100" y="248" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#1F2937">补充增量刷新、数据质量检查</text>
+    <text x="100" y="278" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#52677A">交付物：自动刷新日志和质量看板</text>
+    <path d="M236 306 V318" stroke="#2F80ED" stroke-width="2" stroke-linecap="round" />
+  </g>
+  <g id="month-2">
+    <path fill="#FFFFFF" stroke="#D6E0EA" d="M488,382 H792 A14,14 0 0 1 806,396 V502 A14,14 0 0 1 792,516 H488 A14,14 0 0 1 474,502 V396 A14,14 0 0 1 488,382 Z" />
+    <path d="M640 366 V382" stroke="#00A6A6" stroke-width="2" stroke-linecap="round" />
+    <text x="504" y="424" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold" fill="#00A6A6">第 2 月：智能层</text>
+    <text x="504" y="458" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#1F2937">完善意图识别、追问澄清和失败回退</text>
+    <text x="504" y="488" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#52677A">交付物：问题集评测与稳定性报告</text>
+  </g>
+  <g id="month-3">
+    <path fill="#FFFFFF" stroke="#D6E0EA" d="M892,172 H1196 A14,14 0 0 1 1210,186 V292 A14,14 0 0 1 1196,306 H892 A14,14 0 0 1 878,292 V186 A14,14 0 0 1 892,172 Z" />
+    <text x="908" y="214" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold" fill="#F2994A">第 3 月：业务层</text>
+    <text x="908" y="248" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#1F2937">把建议转成任务清单和复盘指标</text>
+    <text x="908" y="278" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#52677A">交付物：运营干预闭环模板</text>
+    <path d="M1044 306 V318" stroke="#F2994A" stroke-width="2" stroke-linecap="round" />
+  </g>
+  <g id="bottom-note">
+    <path fill="#17324D" d="M262,578 H1018 A12,12 0 0 1 1030,590 V620 A12,12 0 0 1 1018,632 H262 A12,12 0 0 1 250,620 V590 A12,12 0 0 1 262,578 Z" />
+    <text x="640" y="612" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">最终目标：让业务同学用自然语言完成“发现、解释、行动、复盘”</text>
+  </g>
+  <g id="footer">
+    <text x="50" y="684" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">Source: docs/项目报告.md, README.md</text>
+    <text x="1230" y="684" text-anchor="end" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">17 / 18</text>
+  </g>
+</svg>

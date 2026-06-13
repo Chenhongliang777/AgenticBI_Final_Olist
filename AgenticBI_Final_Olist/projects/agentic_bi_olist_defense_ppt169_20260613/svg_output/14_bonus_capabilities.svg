@@ -1,0 +1,61 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F7F9FB"/>
+  <g id="header">
+    <text x="50" y="58" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" font-weight="bold" fill="#17324D">加分能力：What-if 推演与异常检测增强决策深度</text>
+    <rect x="50" y="82" width="1180" height="42" rx="8" fill="#2F80ED" fill-opacity="0.10"/>
+    <text x="70" y="109" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#17324D">核心结论：系统可以回答“发生了什么”，也能进一步支持“如果这样做会怎样”和“哪里不正常”</text>
+  </g>
+  <g id="what-if-card">
+    <rect x="64" y="158" width="544" height="424" rx="16" fill="#FFFFFF" stroke="#D6E0EA"/>
+    <circle cx="118" cy="218" r="28" fill="#2F80ED" fill-opacity="0.14"/>
+    <path d="M107 219 L117 229 L133 207" fill="none" stroke="#2F80ED" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="160" y="211" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="bold" fill="#17324D">What-if 推演</text>
+    <text x="160" y="244" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#52677A">面向业务策略变化的轻量模拟</text>
+    <line x1="94" y1="284" x2="578" y2="284" stroke="#D6E0EA"/>
+    <g id="what-if-flow">
+      <rect x="104" y="326" width="132" height="70" rx="10" fill="#2F80ED" fill-opacity="0.10" stroke="#D6E0EA"/>
+      <text x="170" y="355" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="bold" fill="#2F80ED">输入假设</text>
+      <text x="170" y="381" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" fill="#52677A">价格/运费/分期</text>
+      <path d="M246 361 H300" fill="none" stroke="#94A3B8" stroke-width="2"/>
+      <path d="M300 361 L290 355 M300 361 L290 367" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+      <rect x="312" y="326" width="132" height="70" rx="10" fill="#00A6A6" fill-opacity="0.10" stroke="#D6E0EA"/>
+      <text x="378" y="355" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="bold" fill="#00A6A6">套用模型</text>
+      <text x="378" y="381" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" fill="#52677A">规则与聚合视图</text>
+      <path d="M454 361 H508" fill="none" stroke="#94A3B8" stroke-width="2"/>
+      <path d="M508 361 L498 355 M508 361 L498 367" fill="none" stroke="#94A3B8" stroke-width="2" stroke-linecap="round"/>
+      <rect x="520" y="326" width="58" height="70" rx="10" fill="#F2994A" fill-opacity="0.14" stroke="#D6E0EA"/>
+      <text x="549" y="356" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="bold" fill="#F2994A">输出</text>
+      <text x="549" y="381" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" fill="#52677A">影响</text>
+    </g>
+    <text x="104" y="456" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#17324D">答辩示例</text>
+    <text x="104" y="488" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#1F2937">如果免息分期覆盖高客单品类，转化和 GMV 如何变化？</text>
+    <text x="104" y="518" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">用同一套 Agent 编排返回表格、解释和可视化。</text>
+  </g>
+  <g id="anomaly-card">
+    <rect x="672" y="158" width="544" height="424" rx="16" fill="#FFFFFF" stroke="#D6E0EA"/>
+    <circle cx="726" cy="218" r="28" fill="#C62828" fill-opacity="0.10"/>
+    <path d="M726 201 L748 238 H704 Z" fill="none" stroke="#C62828" stroke-width="3" stroke-linejoin="round"/>
+    <line x1="726" y1="212" x2="726" y2="225" stroke="#C62828" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="726" cy="232" r="2.8" fill="#C62828"/>
+    <text x="768" y="211" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="bold" fill="#17324D">异常检测</text>
+    <text x="768" y="244" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#52677A">面向订单、卖家和配送指标的风险提示</text>
+    <line x1="702" y1="284" x2="1186" y2="284" stroke="#D6E0EA"/>
+    <g id="anomaly-metrics">
+      <rect x="712" y="326" width="138" height="104" rx="10" fill="#C62828" fill-opacity="0.08" stroke="#D6E0EA"/>
+      <text x="781" y="362" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#C62828">延迟尾部</text>
+      <text x="781" y="393" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" fill="#52677A">超阈值订单</text>
+      <rect x="876" y="326" width="138" height="104" rx="10" fill="#F2994A" fill-opacity="0.14" stroke="#D6E0EA"/>
+      <text x="945" y="362" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#F2994A">运费异常</text>
+      <text x="945" y="393" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" fill="#52677A">重量体积偏离</text>
+      <rect x="1040" y="326" width="138" height="104" rx="10" fill="#2F80ED" fill-opacity="0.10" stroke="#D6E0EA"/>
+      <text x="1109" y="362" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#2F80ED">评分下滑</text>
+      <text x="1109" y="393" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" fill="#52677A">品类或卖家聚集</text>
+    </g>
+    <text x="712" y="486" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#17324D">落地价值</text>
+    <text x="712" y="518" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#1F2937">把异常点作为下一轮追问入口，缩短从发现到处理的路径。</text>
+  </g>
+  <g id="footer">
+    <text x="50" y="684" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">Source: docs/05_results.md, dashboard/app.py</text>
+    <text x="1230" y="684" text-anchor="end" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">14 / 18</text>
+  </g>
+</svg>

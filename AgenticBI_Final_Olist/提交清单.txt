@@ -1,0 +1,35 @@
+AgenticBI_Final_Olist 最终提交清单
+
+一、代码与运行文件
+[x] agents/ 多智能体实现与 LangGraph 编排
+[x] utils/ 数据加载、清洗、预聚合刷新、启动自检、性能对比
+[x] models/ 预测、NLP、What-if 模拟
+[x] dashboard/ Streamlit Web 仪表板
+[x] config/ 数据字典与诊断 SQL
+[x] requirements.txt
+[x] .env.example
+
+二、报告与文档
+[x] docs/项目报告.md
+[x] docs/项目报告.docx
+[x] docs/项目报告.pdf
+[x] docs/architecture.png
+[x] docs/01_data.md 至 docs/05_results.md
+[x] README.md 最终版
+
+三、答辩材料
+[x] 答辩PPT.pptx
+[x] 答辩讲稿.txt
+[x] data/artifacts/rehearsal/rehearsal_record.md
+[x] data/artifacts/rehearsal/demo_rehearsal.mp4
+
+四、截图与素材
+[x] data/artifacts/perf/perf_compare_chart.png
+[x] data/artifacts/demo/ 图表素材
+[x] data/artifacts/demo/folium_geo_heatmap.html
+
+五、小组分工
+[x] A：数据与基础设施，25%
+[x] B：智能体编排与核心分析，25%
+[x] C：可视化与高级分析，25%
+[x] D：文档整合与答辩交付，25%
