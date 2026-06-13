@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F7F9FB" />
+  <g id="header">
+    <text x="50" y="58" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" font-weight="bold" fill="#17324D">项目复盘：三个挑战对应三类工程修正</text>
+    <path fill="#F2994A" fill-opacity="0.14" d="M58,82 H1222 A8,8 0 0 1 1230,90 V116 A8,8 0 0 1 1222,124 H58 A8,8 0 0 1 50,116 V90 A8,8 0 0 1 58,82 Z" />
+    <text x="70" y="109" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#17324D">核心结论：我们把性能、歧义和展示一致性问题转化为可复用的工程机制</text>
+  </g>
+  <g id="table">
+    <path fill="#FFFFFF" stroke="#D6E0EA" d="M74,154 H1206 A14,14 0 0 1 1220,168 V626 A14,14 0 0 1 1206,640 H74 A14,14 0 0 1 60,626 V168 A14,14 0 0 1 74,154 Z" />
+    <path fill="#17324D" d="M74,154 H1206 A14,14 0 0 1 1220,168 V198 A14,14 0 0 1 1206,212 H74 A14,14 0 0 1 60,198 V168 A14,14 0 0 1 74,154 Z" />
+    <text x="116" y="190" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">挑战</text>
+    <text x="486" y="190" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">处理方式</text>
+    <text x="914" y="190" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">结果</text>
+    <line x1="416" y1="154" x2="416" y2="640" stroke="#D6E0EA" />
+    <line x1="824" y1="154" x2="824" y2="640" stroke="#D6E0EA" />
+    <line x1="60" y1="354" x2="1220" y2="354" stroke="#D6E0EA" />
+    <line x1="60" y1="498" x2="1220" y2="498" stroke="#D6E0EA" />
+    <g id="row-1">
+      <circle cx="96" cy="282" r="16" fill="#C62828" fill-opacity="0.12" />
+      <path d="M96 270 L109 293 H83 Z" fill="none" stroke="#C62828" stroke-width="2.4" stroke-linejoin="round" />
+      <text x="126" y="263" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">明细表直接查询慢</text>
+      <text x="126" y="294" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">自然语言问答容易触发多表 JOIN</text>
+      <text x="456" y="263" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#2F80ED">预聚合视图与刷新脚本</text>
+      <text x="456" y="294" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">把高频指标沉淀为 mv_* 视图</text>
+      <text x="864" y="263" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">速度显著提升</text>
+      <text x="864" y="294" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">答辩中可展示 benchmark 图</text>
+    </g>
+    <g id="row-2">
+      <circle cx="96" cy="426" r="16" fill="#F2994A" fill-opacity="0.18" />
+      <path d="M87 426 H105 M96 417 V435" stroke="#F2994A" stroke-width="2.4" stroke-linecap="round" />
+      <text x="126" y="407" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">业务问题存在歧义</text>
+      <text x="126" y="438" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">同一句话可能同时需要 SQL、图表和解释</text>
+      <text x="456" y="407" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#00A6A6">Coordinator 状态编排</text>
+      <text x="456" y="438" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">以 intent、context、artifacts 组织多 Agent</text>
+      <text x="864" y="407" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">追问链路更稳定</text>
+      <text x="864" y="438" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">支持上下文记忆和多轮补充</text>
+    </g>
+    <g id="row-3">
+      <circle cx="96" cy="570" r="16" fill="#2F80ED" fill-opacity="0.12" />
+      <path fill="none" stroke="#2F80ED" stroke-width="2.2" d="M90,561 H102 A3,3 0 0 1 105,564 V576 A3,3 0 0 1 102,579 H90 A3,3 0 0 1 87,576 V564 A3,3 0 0 1 90,561 Z" />
+      <path d="M91 573 H101 M91 568 H101" stroke="#2F80ED" stroke-width="2" stroke-linecap="round" />
+      <text x="126" y="551" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">图表类型需要可控</text>
+      <text x="126" y="582" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">不同问题需要不同图形和导出资产</text>
+      <text x="456" y="551" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#2F80ED">Visualization Agent 规则</text>
+      <text x="456" y="582" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">封装柱图、热力图、散点图和保存路径</text>
+      <text x="864" y="551" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#2E7D32">演示素材可复现</text>
+      <text x="864" y="582" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">报告、PPT、讲稿可引用同一批产物</text>
+    </g>
+  </g>
+  <g id="footer">
+    <text x="50" y="684" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">Source: docs/项目报告.md, docs/05_results.md, a8_test_record.md, b9_test_record.md</text>
+    <text x="1230" y="684" text-anchor="end" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">16 / 18</text>
+  </g>
+</svg>

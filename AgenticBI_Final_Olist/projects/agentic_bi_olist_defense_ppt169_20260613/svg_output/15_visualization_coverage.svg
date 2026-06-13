@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F7F9FB"/>
+  <g id="header">
+    <text x="50" y="58" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" font-weight="bold" fill="#17324D">可视化覆盖四类核心经营视角</text>
+    <rect x="50" y="82" width="1180" height="42" rx="8" fill="#2F80ED" fill-opacity="0.10"/>
+    <text x="70" y="109" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#17324D">核心结论：Dashboard Agent 自动选择图形，让概览类图表和诊断类散点图同时服务业务追问</text>
+  </g>
+  <g id="left-summary">
+    <rect x="58" y="150" width="450" height="492" rx="14" fill="#FFFFFF" stroke="#D6E0EA"/>
+    <text x="86" y="192" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold" fill="#17324D">概览视角</text>
+    <g id="mini-1">
+      <rect x="86" y="220" width="178" height="126" rx="8" fill="#F7F9FB" stroke="#D6E0EA"/>
+      <image href="../images/geo_state_gmv_bar.png" x="104" y="246" width="142" height="76" preserveAspectRatio="xMidYMid meet"/>
+      <text x="275" y="268" font-family="Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="bold" fill="#17324D">州别 GMV</text>
+      <text x="275" y="298" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">识别重点市场和区域集中度</text>
+    </g>
+    <g id="mini-2">
+      <rect x="86" y="370" width="178" height="126" rx="8" fill="#F7F9FB" stroke="#D6E0EA"/>
+      <image href="../images/bar_top_categories.png" x="104" y="396" width="142" height="76" preserveAspectRatio="xMidYMid meet"/>
+      <text x="275" y="418" font-family="Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="bold" fill="#17324D">品类销售</text>
+      <text x="275" y="448" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">判断供给结构和头部品类</text>
+    </g>
+    <g id="mini-3">
+      <rect x="86" y="520" width="178" height="88" rx="8" fill="#F7F9FB" stroke="#D6E0EA"/>
+      <image href="../images/bar_state_avg_basket.png" x="104" y="538" width="142" height="52" preserveAspectRatio="xMidYMid meet"/>
+      <text x="275" y="558" font-family="Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="bold" fill="#17324D">州别客单价</text>
+      <text x="275" y="588" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">比较区域价值差异</text>
+    </g>
+  </g>
+  <g id="right-main">
+    <rect x="546" y="150" width="676" height="492" rx="14" fill="#FFFFFF" stroke="#D6E0EA"/>
+    <text x="580" y="192" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold" fill="#17324D">诊断视角：重量体积与运费</text>
+    <text x="580" y="224" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">散点图用于发现物流成本中的离群点、聚类和异常收费关系。</text>
+    <image href="../images/scatter_weight_dims_vs_freight.png" x="594" y="252" width="580" height="330" preserveAspectRatio="xMidYMid meet"/>
+    <rect x="580" y="596" width="594" height="28" rx="8" fill="#00A6A6" fill-opacity="0.10"/>
+    <text x="877" y="616" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" font-weight="bold" fill="#00A6A6">从概览排名进入异常诊断，是可视化 Agent 的核心价值</text>
+  </g>
+  <g id="footer">
+    <text x="50" y="684" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">Source: data/artifacts/demo/*.png, dashboard/viz_agent.py</text>
+    <text x="1230" y="684" text-anchor="end" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">15 / 18</text>
+  </g>
+</svg>

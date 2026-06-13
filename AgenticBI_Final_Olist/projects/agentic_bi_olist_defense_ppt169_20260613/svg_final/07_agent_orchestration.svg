@@ -1,0 +1,70 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F7F9FB" />
+  <defs>
+    <marker id="arrowHead" markerWidth="10" markerHeight="10" refX="9" refY="5" orient="auto" markerUnits="strokeWidth">
+      <path d="M0,0 L10,5 L0,10 Z" fill="#2F80ED" />
+    </marker>
+  </defs>
+  <g id="header">
+    <text x="50" y="58" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" font-weight="bold" fill="#17324D">LangGraph 按问题类型路由最小必要 Agent</text>
+    <path fill="#2F80ED" fill-opacity="0.10" d="M58,82 H1222 A8,8 0 0 1 1230,90 V116 A8,8 0 0 1 1222,124 H58 A8,8 0 0 1 50,116 V90 A8,8 0 0 1 58,82 Z" />
+    <text x="70" y="109" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#17324D">核心结论：条件分支避免所有问题都触发预测或 NLP，提升响应速度和可控性</text>
+  </g>
+  <g id="flow-main">
+    <path fill="#17324D" d="M92,184 H258 A12,12 0 0 1 270,196 V266 A12,12 0 0 1 258,278 H92 A12,12 0 0 1 80,266 V196 A12,12 0 0 1 92,184 Z" />
+    <text x="175" y="222" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">User Question</text>
+    <text x="175" y="252" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" fill="#D6E0EA">自然语言业务问题</text>
+    <line x1="270" y1="231" x2="350" y2="231" stroke="#2F80ED" stroke-width="3" marker-end="url(#arrowHead)" />
+    <path fill="#FFFFFF" stroke="#D6E0EA" d="M372,168 H568 A12,12 0 0 1 580,180 V282 A12,12 0 0 1 568,294 H372 A12,12 0 0 1 360,282 V180 A12,12 0 0 1 372,168 Z" />
+    <text x="470" y="214" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#17324D">Coordinator</text>
+    <text x="470" y="244" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">LLM 任务分解</text>
+    <text x="470" y="268" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">输出 plan / route</text>
+    <line x1="580" y1="231" x2="650" y2="231" stroke="#2F80ED" stroke-width="3" marker-end="url(#arrowHead)" />
+    <path fill="#FFFFFF" stroke="#D6E0EA" d="M672,168 H858 A12,12 0 0 1 870,180 V282 A12,12 0 0 1 858,294 H672 A12,12 0 0 1 660,282 V180 A12,12 0 0 1 672,168 Z" />
+    <text x="765" y="214" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#17324D">SQL Agent</text>
+    <text x="765" y="244" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">视图优先</text>
+    <text x="765" y="268" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">必要时回退基础表</text>
+    <line x1="870" y1="231" x2="950" y2="231" stroke="#2F80ED" stroke-width="3" marker-end="url(#arrowHead)" />
+    <path fill="#17324D" d="M972,184 H1178 A12,12 0 0 1 1190,196 V266 A12,12 0 0 1 1178,278 H972 A12,12 0 0 1 960,266 V196 A12,12 0 0 1 972,184 Z" />
+    <text x="1075" y="222" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">Decision</text>
+    <text x="1075" y="252" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" fill="#D6E0EA">解释 + 建议 + 汇总回答</text>
+  </g>
+  <g id="conditional-lanes">
+    <path d="M765 294 V360 H220" fill="none" stroke="#D6E0EA" stroke-width="2" stroke-dasharray="8,4" />
+    <path d="M765 294 V360 H500" fill="none" stroke="#D6E0EA" stroke-width="2" stroke-dasharray="8,4" />
+    <path d="M765 294 V360 H780" fill="none" stroke="#D6E0EA" stroke-width="2" stroke-dasharray="8,4" />
+    <path d="M765 294 V360 H1060" fill="none" stroke="#D6E0EA" stroke-width="2" stroke-dasharray="8,4" />
+    <g id="lane-forecast">
+      <path fill="#2F80ED" fill-opacity="0.10" stroke="#D6E0EA" d="M112,380 H328 A12,12 0 0 1 340,392 V490 A12,12 0 0 1 328,502 H112 A12,12 0 0 1 100,490 V392 A12,12 0 0 1 112,380 Z" />
+      <text x="220" y="422" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#2F80ED">Forecast</text>
+      <text x="220" y="452" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">预测/未来/6 周</text>
+      <text x="220" y="476" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">才触发 SARIMAX</text>
+    </g>
+    <g id="lane-nlp">
+      <path fill="#00A6A6" fill-opacity="0.10" stroke="#D6E0EA" d="M392,380 H608 A12,12 0 0 1 620,392 V490 A12,12 0 0 1 608,502 H392 A12,12 0 0 1 380,490 V392 A12,12 0 0 1 392,380 Z" />
+      <text x="500" y="422" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#00A6A6">NLP</text>
+      <text x="500" y="452" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">评论/差评/原因</text>
+      <text x="500" y="476" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">才抽取关键词与情感</text>
+    </g>
+    <g id="lane-viz">
+      <path fill="#F2994A" fill-opacity="0.12" stroke="#D6E0EA" d="M672,380 H888 A12,12 0 0 1 900,392 V490 A12,12 0 0 1 888,502 H672 A12,12 0 0 1 660,490 V392 A12,12 0 0 1 672,380 Z" />
+      <text x="780" y="422" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#F2994A">Visualization</text>
+      <text x="780" y="452" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">按问题规划图表</text>
+      <text x="780" y="476" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">快速模式最多 4 张</text>
+    </g>
+    <g id="lane-bonus">
+      <path fill="#C62828" fill-opacity="0.08" stroke="#D6E0EA" d="M952,380 H1168 A12,12 0 0 1 1180,392 V490 A12,12 0 0 1 1168,502 H952 A12,12 0 0 1 940,490 V392 A12,12 0 0 1 952,380 Z" />
+      <text x="1060" y="422" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#C62828">Special Agents</text>
+      <text x="1060" y="452" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">What-if / Anomaly</text>
+      <text x="1060" y="476" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">只在模拟/预警问题触发</text>
+    </g>
+  </g>
+  <g id="takeaway">
+    <path fill="#17324D" d="M177,558 H1103 A27,27 0 0 1 1130,585 V585 A27,27 0 0 1 1103,612 H177 A27,27 0 0 1 150,585 V585 A27,27 0 0 1 177,558 Z" />
+    <text x="640" y="593" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">从“线性全跑”升级为“按意图路由”，系统更快、更稳、更可解释</text>
+  </g>
+  <g id="footer">
+    <text x="50" y="684" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">Source: agents/graph.py, agents/coordinator.py, docs/03_agents.md</text>
+    <text x="1230" y="684" text-anchor="end" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">07 / 18</text>
+  </g>
+</svg>

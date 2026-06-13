@@ -1,0 +1,27 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F7F9FB"/>
+  <g id="header">
+    <text x="50" y="58" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" font-weight="bold" fill="#17324D">预聚合视图让月度 GMV 查询约 600 倍加速</text>
+    <rect x="50" y="82" width="1180" height="42" rx="8" fill="#F2994A" fill-opacity="0.14"/>
+    <text x="70" y="109" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#17324D">核心结论：高频指标离线预计算，是 Web 端交互体验稳定的关键</text>
+  </g>
+  <g id="benchmark-image">
+    <rect x="56" y="152" width="760" height="444" rx="12" fill="#FFFFFF" stroke="#D6E0EA"/>
+    <image href="../images/perf_compare_chart.png" x="78" y="176" width="716" height="398" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+  <g id="benchmark-kpis">
+    <rect x="850" y="152" width="370" height="444" rx="14" fill="#17324D"/>
+    <text x="886" y="214" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#D6E0EA">同一问题：月度 GMV 趋势</text>
+    <text x="886" y="292" font-family="Microsoft YaHei, Arial, sans-serif" font-size="44" font-weight="bold" fill="#FFFFFF">0.896s</text>
+    <text x="886" y="322" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#D6E0EA">原始表 JOIN + GROUP BY</text>
+    <line x1="886" y1="350" x2="1184" y2="350" stroke="#D6E0EA" stroke-opacity="0.36"/>
+    <text x="886" y="414" font-family="Microsoft YaHei, Arial, sans-serif" font-size="44" font-weight="bold" fill="#F2994A">0.001s</text>
+    <text x="886" y="444" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" fill="#D6E0EA">SELECT mv_monthly_sales</text>
+    <rect x="886" y="488" width="250" height="58" rx="29" fill="#2F80ED"/>
+    <text x="1011" y="526" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF">约 600x 加速</text>
+  </g>
+  <g id="footer">
+    <text x="50" y="684" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">Source: data/artifacts/perf/perf_compare_chart.png, docs/a8_test_record.md</text>
+    <text x="1230" y="684" text-anchor="end" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">06 / 18</text>
+  </g>
+</svg>

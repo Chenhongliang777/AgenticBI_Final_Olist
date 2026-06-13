@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F7F9FB"/>
+  <g id="header">
+    <text x="50" y="58" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" font-weight="bold" fill="#17324D">诊断型演示把配送时效转成卖家风险动作</text>
+    <rect x="50" y="82" width="1180" height="42" rx="8" fill="#F2994A" fill-opacity="0.14"/>
+    <text x="70" y="109" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#17324D">核心结论：先识别延迟天数分布，再把高风险链路沉淀为运营干预清单</text>
+  </g>
+  <g id="chart-area">
+    <rect x="56" y="150" width="700" height="500" rx="12" fill="#FFFFFF" stroke="#D6E0EA"/>
+    <image href="../images/bar_delivery_days.png" x="88" y="185" width="636" height="430" preserveAspectRatio="xMidYMid meet"/>
+  </g>
+  <g id="diagnosis-panel">
+    <rect x="790" y="150" width="420" height="500" rx="14" fill="#FFFFFF" stroke="#D6E0EA"/>
+    <text x="824" y="203" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold" fill="#17324D">诊断闭环</text>
+    <g id="step-1">
+      <circle cx="846" cy="254" r="18" fill="#2F80ED"/>
+      <text x="846" y="261" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">1</text>
+      <text x="880" y="250" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">发现</text>
+      <text x="880" y="278" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">定位延迟天数集中区间和异常尾部</text>
+    </g>
+    <line x1="846" y1="282" x2="846" y2="340" stroke="#D6E0EA" stroke-width="2"/>
+    <g id="step-2">
+      <circle cx="846" cy="362" r="18" fill="#00A6A6"/>
+      <text x="846" y="369" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">2</text>
+      <text x="880" y="358" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">解释</text>
+      <text x="880" y="386" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">联动卖家、州别、品类和运费字段</text>
+    </g>
+    <line x1="846" y1="390" x2="846" y2="448" stroke="#D6E0EA" stroke-width="2"/>
+    <g id="step-3">
+      <circle cx="846" cy="470" r="18" fill="#F2994A"/>
+      <text x="846" y="477" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">3</text>
+      <text x="880" y="466" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#1F2937">干预</text>
+      <text x="880" y="494" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">生成优先级、阈值和负责人建议</text>
+    </g>
+    <rect x="824" y="550" width="340" height="58" rx="10" fill="#C62828" fill-opacity="0.08" stroke="#D6E0EA"/>
+    <text x="850" y="584" font-family="Microsoft YaHei, Arial, sans-serif" font-size="17" font-weight="bold" fill="#C62828">答辩强调：不是只画图，而是给运营动作</text>
+  </g>
+  <g id="footer">
+    <text x="50" y="684" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">Source: data/artifacts/demo/bar_delivery_days.png, docs/04_qa_test.md</text>
+    <text x="1230" y="684" text-anchor="end" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">12 / 18</text>
+  </g>
+</svg>

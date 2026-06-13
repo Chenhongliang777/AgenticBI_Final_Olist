@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F7F9FB" />
+  <g id="background-grid">
+    <path d="M80 96 H1200 M80 176 H1200 M80 256 H1200 M80 336 H1200 M80 416 H1200 M80 496 H1200 M80 576 H1200" stroke="#D6E0EA" stroke-width="1" stroke-opacity="0.55" />
+    <path d="M160 72 V640 M320 72 V640 M480 72 V640 M640 72 V640 M800 72 V640 M960 72 V640 M1120 72 V640" stroke="#D6E0EA" stroke-width="1" stroke-opacity="0.42" />
+    <circle cx="1080" cy="160" r="86" fill="#2F80ED" fill-opacity="0.10" />
+    <circle cx="180" cy="560" r="120" fill="#00A6A6" fill-opacity="0.10" />
+  </g>
+  <g id="cover-title">
+    <path fill="#FFFFFF" stroke="#D6E0EA" d="M98,118 H1182 A18,18 0 0 1 1200,136 V490 A18,18 0 0 1 1182,508 H98 A18,18 0 0 1 80,490 V136 A18,18 0 0 1 98,118 Z" />
+    <rect x="80" y="118" width="10" height="390" fill="#2F80ED" />
+    <text x="130" y="205" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" font-weight="bold" fill="#00A6A6">Agentic BI Final Defense</text>
+    <text x="130" y="292" font-family="Microsoft YaHei, Arial, sans-serif" font-size="66" font-weight="bold" fill="#17324D">多表电商运营分析</text>
+    <text x="130" y="368" font-family="Microsoft YaHei, Arial, sans-serif" font-size="54" font-weight="bold" fill="#17324D">与决策智能系统</text>
+    <text x="130" y="430" font-family="Microsoft YaHei, Arial, sans-serif" font-size="24" fill="#52677A">基于 Olist 巴西电商数据集 · MySQL 预聚合 · LangGraph 多 Agent · Streamlit</text>
+  </g>
+  <g id="cover-tags">
+    <path fill="#17324D" d="M151,548 H299 A21,21 0 0 1 320,569 V569 A21,21 0 0 1 299,590 H151 A21,21 0 0 1 130,569 V569 A21,21 0 0 1 151,548 Z" />
+    <text x="225" y="576" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Pre-Aggregation</text>
+    <path fill="#2F80ED" d="M361,548 H467 A21,21 0 0 1 488,569 V569 A21,21 0 0 1 467,590 H361 A21,21 0 0 1 340,569 V569 A21,21 0 0 1 361,548 Z" />
+    <text x="414" y="576" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">LangGraph</text>
+    <path fill="#00A6A6" d="M529,548 H619 A21,21 0 0 1 640,569 V569 A21,21 0 0 1 619,590 H529 A21,21 0 0 1 508,569 V569 A21,21 0 0 1 529,548 Z" />
+    <text x="574" y="576" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">NLP / BI</text>
+    <path fill="#F2994A" d="M681,548 H761 A21,21 0 0 1 782,569 V569 A21,21 0 0 1 761,590 H681 A21,21 0 0 1 660,569 V569 A21,21 0 0 1 681,548 Z" />
+    <text x="721" y="576" text-anchor="middle" font-family="Microsoft YaHei, Arial, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Demo</text>
+  </g>
+  <g id="footer">
+    <text x="80" y="684" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13" fill="#94A3B8">Business Intelligence Case Analysis · 2026</text>
+    <text x="1200" y="684" text-anchor="end" font-family="Microsoft YaHei, Arial, sans-serif" font-size="13" fill="#94A3B8">01 / 18</text>
+  </g>
+</svg>

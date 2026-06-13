@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F7F9FB" />
+  <g id="header">
+    <text x="50" y="58" font-family="Microsoft YaHei, Arial, sans-serif" font-size="32" font-weight="bold" fill="#17324D">MemorySaver 与显式历史让追问不丢上下文</text>
+    <path fill="#00A6A6" fill-opacity="0.10" d="M58,82 H1222 A8,8 0 0 1 1230,90 V116 A8,8 0 0 1 1222,124 H58 A8,8 0 0 1 50,116 V90 A8,8 0 0 1 58,82 Z" />
+    <text x="70" y="109" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#17324D">核心结论：“那准时率呢？”会被改写为带上轮问题的完整分析任务</text>
+  </g>
+  <g id="chat-example">
+    <path fill="#FFFFFF" stroke="#D6E0EA" d="M88,154 H596 A16,16 0 0 1 612,170 V586 A16,16 0 0 1 596,602 H88 A16,16 0 0 1 72,586 V170 A16,16 0 0 1 88,154 Z" />
+    <text x="104" y="202" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold" fill="#17324D">多轮追问示例</text>
+    <g id="chat-1">
+      <path fill="#2F80ED" fill-opacity="0.12" d="M118,232 H480 A14,14 0 0 1 494,246 V278 A14,14 0 0 1 480,292 H118 A14,14 0 0 1 104,278 V246 A14,14 0 0 1 118,232 Z" />
+      <text x="126" y="258" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#2F80ED">User</text>
+      <text x="126" y="280" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#1F2937">2017 年哪个州销售额最高？</text>
+    </g>
+    <g id="chat-2">
+      <path fill="#F7F9FB" stroke="#D6E0EA" d="M172,318 H534 A14,14 0 0 1 548,332 V374 A14,14 0 0 1 534,388 H172 A14,14 0 0 1 158,374 V332 A14,14 0 0 1 172,318 Z" />
+      <text x="180" y="344" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#17324D">Assistant</text>
+      <text x="180" y="368" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#1F2937">命中 mv_state_sales，SP 州排名第一。</text>
+    </g>
+    <g id="chat-3">
+      <path fill="#2F80ED" fill-opacity="0.12" d="M118,414 H480 A14,14 0 0 1 494,428 V460 A14,14 0 0 1 480,474 H118 A14,14 0 0 1 104,460 V428 A14,14 0 0 1 118,414 Z" />
+      <text x="126" y="440" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#2F80ED">User</text>
+      <text x="126" y="462" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#1F2937">那准时率呢？</text>
+    </g>
+    <g id="chat-4">
+      <path fill="#F7F9FB" stroke="#D6E0EA" d="M172,500 H534 A14,14 0 0 1 548,514 V556 A14,14 0 0 1 534,570 H172 A14,14 0 0 1 158,556 V514 A14,14 0 0 1 172,500 Z" />
+      <text x="180" y="526" font-family="Microsoft YaHei, Arial, sans-serif" font-size="16" font-weight="bold" fill="#17324D">System rewrite</text>
+      <text x="180" y="550" font-family="Microsoft YaHei, Arial, sans-serif" font-size="14" fill="#1F2937">2017 年哪个州销售额最高？追问：那准时率呢？</text>
+    </g>
+  </g>
+  <g id="mechanism">
+    <path fill="#FFFFFF" stroke="#D6E0EA" d="M676,154 H1194 A16,16 0 0 1 1210,170 V586 A16,16 0 0 1 1194,602 H676 A16,16 0 0 1 660,586 V170 A16,16 0 0 1 676,154 Z" />
+    <text x="692" y="202" font-family="Microsoft YaHei, Arial, sans-serif" font-size="22" font-weight="bold" fill="#17324D">两层上下文机制</text>
+    <g id="state-1">
+      <path fill="#17324D" d="M704,236 H1142 A12,12 0 0 1 1154,248 V316 A12,12 0 0 1 1142,328 H704 A12,12 0 0 1 692,316 V248 A12,12 0 0 1 704,236 Z" />
+      <text x="720" y="270" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">LangGraph MemorySaver</text>
+      <text x="720" y="300" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#D6E0EA">同一 thread_id 下保存图状态快照</text>
+    </g>
+    <g id="state-2">
+      <path fill="#2F80ED" fill-opacity="0.12" stroke="#D6E0EA" d="M704,356 H1142 A12,12 0 0 1 1154,368 V436 A12,12 0 0 1 1142,448 H704 A12,12 0 0 1 692,436 V368 A12,12 0 0 1 704,356 Z" />
+      <text x="720" y="390" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#2F80ED">conversation_history</text>
+      <text x="720" y="420" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">前端显式传入历史问答，供 Coordinator 和 SQL Agent 使用</text>
+    </g>
+    <g id="state-3">
+      <path fill="#00A6A6" fill-opacity="0.12" stroke="#D6E0EA" d="M704,476 H1142 A12,12 0 0 1 1154,488 V556 A12,12 0 0 1 1142,568 H704 A12,12 0 0 1 692,556 V488 A12,12 0 0 1 704,476 Z" />
+      <text x="720" y="510" font-family="Microsoft YaHei, Arial, sans-serif" font-size="20" font-weight="bold" fill="#00A6A6">context_rewrite</text>
+      <text x="720" y="540" font-family="Microsoft YaHei, Arial, sans-serif" font-size="15" fill="#52677A">把短追问补全为独立业务问题，降低上下文丢失风险</text>
+    </g>
+  </g>
+  <g id="footer">
+    <text x="50" y="684" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">Source: agents/state.py, dashboard/app.py, docs/b9_test_record.md</text>
+    <text x="1230" y="684" text-anchor="end" font-family="Microsoft YaHei, Arial, sans-serif" font-size="11" fill="#94A3B8">08 / 18</text>
+  </g>
+</svg>

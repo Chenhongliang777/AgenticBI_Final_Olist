@@ -11,3 +11,8 @@ __pycache__/
 #data/artifacts/
 
 分工信息.txt
+
+# Local QA / generated intermediate files
+data/artifacts/qa_ppt_images/
+projects/*/backup/
+projects/*/exports/
