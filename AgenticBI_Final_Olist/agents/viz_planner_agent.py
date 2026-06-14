@@ -59,7 +59,8 @@ def plan_charts(user_question: str, available_tables: list[str], *, quick_mode: 
     # heuristic fast-path: when quick_mode and question looks like pure SQL lookup
     q = user_question.lower()
     if any(k in q for k in ["多少", "是多少", "what is", "how many", "count", "总计"]) and not any(
-        k in q for k in ["趋势", "变化", "forecast", "预测", "分布", "对比", "关系", "相关", "map", "地理", "热力"]
+        k in q for k in ["趋势", "变化", "forecast", "预测", "分布", "对比", "关系", "相关",
+                          "map", "地理", "热力", "配送", "延迟", "准时", "图表", "展示"]
     ):
         return {"charts": [], "rationale": "pure lookup; no chart needed"}
 

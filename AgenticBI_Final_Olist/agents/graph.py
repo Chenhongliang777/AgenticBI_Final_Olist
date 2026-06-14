@@ -299,27 +299,16 @@ def _viz_node(state: AgenticState) -> AgenticState:
     if state.forecast.get("forecast"):
         forecast_df = pd.DataFrame(state.forecast["forecast"])
 
-    if state.quick_mode:
-        # Quick mode: select 1-4 focused charts matching the question
-        available = list(state.tables.keys())
-        plan = plan_charts(_effective_question(state), available, quick_mode=True)
-        state.requested_charts = plan.get("charts", []) if isinstance(plan, dict) else []
-        if state.requested_charts:
-            state.requested_charts = state.requested_charts[:4]
-        viz = build_viz_bundle_for_charts(
-            {**tables, **{k: pd.DataFrame(v) for k, v in state.tables.items() if k.startswith("_")}},
-            forecast_df,
-            chart_ids=state.requested_charts,
-        )
-        state.figures = viz.paths
-    else:
-        # Non-quick mode (重新生成图表 button): generate all available charts
-        viz = build_default_viz_bundle(
-            {**tables, **{k: pd.DataFrame(v) for k, v in state.tables.items() if k.startswith("_")}},
-            forecast_df,
-        )
-        state.figures = viz.paths
-        state.requested_charts = []
+    # C6: always use build_default_viz_bundle to generate all charts from
+    # whatever tables are available. quick_mode already limits which tables
+    # _analysis_node loads, so this still stays fast while guaranteeing
+    # at least 3-4 chart types when data is present.
+    viz = build_default_viz_bundle(
+        {**tables, **{k: pd.DataFrame(v) for k, v in state.tables.items() if k.startswith("_")}},
+        forecast_df,
+    )
+    state.figures = viz.paths
+    state.requested_charts = [] if not state.quick_mode else state.requested_charts
     return state
 
 
@@ -523,6 +512,9 @@ def _fallback_answer_from_tables(state: AgenticState, analysis_summary: str) -> 
 
 
 def _route_after_analysis(state: AgenticState) -> str:
+    # Non-quick mode: always go through viz to generate the full dashboard
+    if not state.quick_mode:
+        return "viz"
     if state.route.get("forecast"):
         return "forecast"
     if state.route.get("nlp"):
@@ -533,6 +525,9 @@ def _route_after_analysis(state: AgenticState) -> str:
 
 
 def _route_after_forecast(state: AgenticState) -> str:
+    # Non-quick mode: always continue to viz after forecast
+    if not state.quick_mode:
+        return "viz"
     if state.route.get("nlp"):
         return "nlp"
     if state.route.get("viz"):
@@ -541,6 +536,9 @@ def _route_after_forecast(state: AgenticState) -> str:
 
 
 def _route_after_nlp(state: AgenticState) -> str:
+    # Non-quick mode: always continue to viz after NLP
+    if not state.quick_mode:
+        return "viz"
     if state.route.get("viz"):
         return "viz"
     return "decision"
